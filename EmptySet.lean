@@ -9,7 +9,7 @@ theorem ne_empty_of_nonempty {α : Type} (s : Set α) : Set.Nonempty s -> s ≠ 
   intro s_empty
   rw [s_empty] at x_in_s
   have x_in_empty := x_in_s
-  rw [Set.empty_def] at x_in_empty -- but where is the "true" def of ∅ i the code source?
+  rw [Set.empty_def] at x_in_empty
   rw [Set.mem_setOf_eq] at x_in_empty
   assumption
 
